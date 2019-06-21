@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Trivia Game </title>
+    <title>Paula's Trivia Game </title>
 </head>
 <body>
+        <h1>Are You Smarter Than a 3rd Grader?</h1>
+
+    <!--Instructions and Hints-->
+
+        <p>Select the correct answer to each question. </p><hr/>
+    
+    <!--Pregame Image and Start button-->
+        <img id="image" src= "https://www.clipartmax.com/png/middle/275-2754901_for-the-math-is-fun-transparent-background.png">
+
+        <!-- Holders for questions and answers -->
+        <br>
+        <div class="Questions" id="Question"></div>
+        <button class="Answers" id="1" onclick="checkAnswer(1)"></button>
+        <button class="Answers" id="2" onclick="checkAnswer(2)"></button>
+        <button class="Answers" id="3" onclick="checkAnswer(3)"></button>
+        <button class="Answers" id="4" onclick="checkAnswer(4)"></button>
+        <hr/> 
+        <button class="start" id="startbutton" onclick="startButton()">Start</button>
+        
+        
+        <br>
+        <p id="preScore">Score:</p>
+        <p id="theScore"><span id="score"></span><span>/5</span></p>
+        <button class="reset" id="reset" onclick="resetButton()">Reset Game</button>
+
+    <!--JavaScript-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src= "assets/javascript/app.js"></script>       
+              
     
 </body>
 </html>
