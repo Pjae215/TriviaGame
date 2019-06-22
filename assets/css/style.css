@@ -36,19 +36,6 @@ h1 {
 }
 
 #startbutton {
-    font-family: 'Poppins', sans-serif;
-    background-color: darkblue;
-    border: none;
-    color:white;
-    font-weight: bold;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-#reset {
   font-family: 'Poppins', sans-serif;
   background-color: darkblue;
   border: none;
@@ -60,14 +47,23 @@ h1 {
   display: inline-block;
   font-size: 16px;
 }
-
-
+/* #reset {
+  font-family: 'Poppins', sans-serif;
+  background-color: darkblue;
+  border: none;
+  color:white;
+  font-weight: bold;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} */
 #image{
   padding-top: 20px;
   padding-bottom: 10px;
   height: 300px;  
 }
-
 .Answers {
     font-family: 'Poppins', sans-serif;
     background-color:darkblue;
