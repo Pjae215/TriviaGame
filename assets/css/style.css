@@ -85,5 +85,8 @@ h1 {
 #theScore {
 	visibility: hidden;
 }
+#Time {
+	visibility: hidden;
+}
 
 
