@@ -1,7 +1,7 @@
 // array of questions, choices and answers
-var choices = [["1000", "100", "1", "10"], ["14", "12", "72", "36"], ["5", "6", "9", "3"], ["1", "5", "0", "50"], ["22", "34", "36", "24"]];
-var rightanswers = ["100", "12", "9", "0", "24"];
-var listOfQuestions = ["1. What is 10x10?", "2.What is the square root of 144? ", "3. What is 3 squared?", "4. What is 5 x 0?", "5. What is 72 divided by 3?"];
+var choices = [["1000", "100", "1", "10"], ["14", "12", "72", "36"], ["5", "6", "9", "3"], ["1", "5", "0", "50"], ["22", "34", "36", "24"], ["19", "3", "5", "4"], ["-3", "8", "2", "15"], ["19", "20", "21", "22"], ["1", "11", "42", "13"], ["1", "5", "-1", "-2"]];
+var rightanswers = ["100", "12", "9", "0", "24", "4", "2", "21", "13", "-1" ];
+var listOfQuestions = ["1. What is 10x10?", "2. What is the square root of 144? ", "3. What is 3 squared?", "4. What is 5 x 0?", "5. What is 72 divided by 3?", "6. How many times can 36 be divided by 9?", "7. If you have 5 apples and you give 3 away, how many apples do you have left?", "8. What is 7x3 ?", "9. If 6+6 is 12, what is 6+7 ?", "10. What is 1+1-3?"];
 
 //assigning globals for questions, choices, answers, timers and totals
 var numQuestions = $(".Questions");
@@ -70,12 +70,12 @@ function checkAnswer(number) {
 			score ++;
 		}
 		document.getElementById("score").innerHTML = score;
-	if (questionCount<5) {
+	if (questionCount<10) {
 		showQuestionsAndAnswers();
 		document.getElementById(number).blur();
 	} else {
 		setTimeout(function() {
-			alert("You scored " + score + " out of 5.  Game Over!");
+			alert("You scored " + score + " out of 10.  Game Over!");
 		}, 5);
 		setTimeout(function() {
 			resetButton();
